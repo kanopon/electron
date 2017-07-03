@@ -4,6 +4,7 @@
   "description": "",
   "main": ".tmp/main/index.js",
   "dependencies": {
+    "firebase": "^3.6.4",
     "photon": "github:connors/photon",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
@@ -16,8 +17,8 @@
     "electron": "^1.6.1"
   },
   "scripts": {
-	"start": "electron .",
-	"watch": "babel --watch --out-dir .tmp src",
+    "start": "electron .",
+    "watch": "babel --watch --source-maps --out-dir .tmp src",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

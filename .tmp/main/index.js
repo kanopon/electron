@@ -6,9 +6,14 @@ var _createWindow = require("./createWindow");
 
 var _createWindow2 = _interopRequireDefault(_createWindow);
 
+var _setAppMenu = require("./setAppMenu");
+
+var _setAppMenu2 = _interopRequireDefault(_setAppMenu);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _electron.app.on("ready", function () {
+    (0, _setAppMenu2.default)();
     (0, _createWindow2.default)();
 });
 
@@ -23,3 +28,4 @@ _electron.app.on("activate", function (_e, hasVisibleWindows) {
         (0, _createWindow2.default)();
     }
 });
+//# sourceMappingURL=index.js.map
