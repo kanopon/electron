@@ -131,7 +131,6 @@ var Rooms = function (_React$Component) {
 			    rooms = _state.rooms,
 			    roomName = _state.roomName;
 
-			console.log(this.state);
 			return _react2.default.createElement(
 				"div",
 				{ className: "list-group" },

@@ -81,7 +81,6 @@ export default class Rooms extends React.Component {
 	renderRoomList() {
 		const { roomId } = this.props.params;
 		const { rooms, roomName } = this.state;
-		console.log(this.state);
 		return (
 			<div className="list-group">
 				{rooms.map(r => <RoomItem room={r} key={r.key} selected={r.key === roomId} />)}
